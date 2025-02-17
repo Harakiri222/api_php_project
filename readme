@@ -1,0 +1,19 @@
+для POST запросов команда в терминале
+
+User:
+Invoke-WebRequest -Uri "http://localhost:8000/api.php?action=createUser" `
+    -Method Post `
+    -Body "name=Имя&email=Почта&password=secret" `
+    -ContentType "application/x-www-form-urlencoded; charset=UTF-8"
+
+Post:
+Invoke-WebRequest -Uri "http://localhost:8000/api.php?action=createPost" `
+    -Method Post `
+    -Body "title=Название&content=Содержимое&user_id=?" `
+    -ContentType "application/x-www-form-urlencoded; charset=UTF-8"
+
+Comment:
+Invoke-WebRequest -Uri "http://localhost:8000/api.php?action=createComment" `
+    -Method Post `
+    -Body "content=Содержимое&user_id=?&post_id=?" `
+    -ContentType "application/x-www-form-urlencoded; charset=UTF-8"

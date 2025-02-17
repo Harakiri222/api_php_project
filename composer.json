@@ -1,0 +1,21 @@
+{
+    "name": "api_php/api_php_project",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Models\\": "models/",
+            "Controllers\\": "controllers/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vlad Iskov",
+            "email": "vladislav21_34_111@ukr.net"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+      "ext-pdo": "*",
+      "ext-json": "*"
+    }
+}
